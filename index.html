@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de clientes</title>
+</head>
+<body>
+
+  <h1>Cadastro de clientes</h1>
+  <p style="color:red;">Todos os campos são de preenchimento obrigatório</p>
+
+  <form>
+    <!-- Dados pessoais -->
+    <fieldset>
+      <legend><strong>Dados pessoais</strong></legend>
+
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" placeholder="Nome completo"><br><br>
+
+      <label for="data_nasc">Data de nascimento:</label><br>
+      <input type="date" id="data_nasc" name="data_nasc"><br><br>
+
+      Sexo:<br>
+      <input type="radio" id="masc" name="sexo" value="Masculino" checked>
+      <label for="masc">Masculino</label>
+
+      <input type="radio" id="fem" name="sexo" value="Feminino">
+      <label for="fem">Feminino</label><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Informações de contato -->
+    <fieldset>
+      <legend><strong>Informações de contato</strong></legend>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="celular">Telefone celular:</label><br>
+      <input type="text" id="celular" name="celular" maxlength="9" placeholder="Apenas números (máx: 9)"><br><br>
+
+      <label for="website">Website pessoal/profissional:</label><br>
+      <input type="url" id="website" name="website"><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Localização -->
+    <fieldset>
+      <legend><strong>Localização</strong></legend>
+
+      <label for="endereco">Endereço:</label><br>
+      <input type="text" id="endereco" name="endereco"><br><br>
+
+      <label for="numero">Número:</label><br>
+      <input type="number" id="numero" name="numero" min="1" max="9999" placeholder="(Valor entre 1 e 9999)"><br><br>
+
+      <label for="cidade">Cidade:</label><br>
+      <input type="text" id="cidade" name="cidade"><br><br>
+
+      <label for="estado">Estado:</label><br>
+      <select id="estado" name="estado">
+        <option value="">Selecione</option>
+        <option value="AC">AC</option>
+        <option value="AL">AL</option>
+        <option value="AP">AP</option>
+        <option value="AM">AM</option>
+        <option value="BA">BA</option>
+        <option value="CE">CE</option>
+        <option value="DF">DF</option>
+        <option value="ES">ES</option>
+        <option value="GO">GO</option>
+        <option value="MA">MA</option>
+        <option value="MT">MT</option>
+        <option value="MS">MS</option>
+        <option value="MG">MG</option>
+        <option value="PA">PA</option>
+        <option value="PB">PB</option>
+        <option value="PR">PR</option>
+        <option value="PE">PE</option>
+        <option value="PI">PI</option>
+        <option value="RJ">RJ</option>
+        <option value="RN">RN</option>
+        <option value="RS">RS</option>
+        <option value="RO">RO</option>
+        <option value="RR">RR</option>
+        <option value="SC">SC</option>
+        <option value="SP">SP</option>
+        <option value="SE">SE</option>
+        <option value="TO">TO</option>
+      </select><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Botões -->
+    <input type="submit" value="Cadastrar">
+    <input type="reset" value="Limpar">
+  </form>
+
+</body>
+</html>
